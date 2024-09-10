@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<div class="about-me-container">
+    <div class="main-content animate__animated animate__fadeInUp">
+        <div class="education-section" *ngIf="showEducation">
+            <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+                <p style="font-size: 25px;color:#6b08a6 ;">Education</p>
+            </div>
+
+            <p>ADVANCED TECHNOLOGY TRAINING INSTITUDE </p>
+            <p> SKILLS CERTIFICATES</p>
+            <p>2022 </p>
+        </div>
+        <div class="projects-section" *ngIf="showProjects">
+            <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+                <p style="font-size: 25px;color:#6b08a6 ;">Projects</p>
+            </div>
+
+            <div class="project-card" *ngFor="let project of projects">
+                <h4>
+                    Portfolio Website
+                </h4>
+                <p>
+                    To develop a personal portfolio website to showcase my skills and projects.
+                </p>
+
+                <h4></h4>
+                    Home Profile 
+                </h4>
+                <p>
+                    Creating a home page to showcase my ability to coding. 
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>
